@@ -1,15 +1,15 @@
 public class Main {
 
     public static void main(String[] args) {
-        Book FathersAndSons =new Book("Отцы и дети ", 1860);
+        Book FathersAndSons =new Book("Отцы и дети ", 1860, "Иван Сергеевич Тургенев");
         System.out.println("Отцы и дети = " + FathersAndSons.getname());
         System.out.println("Год выпуска = " + FathersAndSons.getRelease());
         FathersAndSons.setrelease(1861);
         System.out.println("FathersAndSons.getRelease() = " + FathersAndSons.getRelease());
-        Author author = new Author("Иван ", "Тургенев ");
+        Author author  = new Author("Иван ", "Тургенев ");
         System.out.println("Name " + author.getAuthorName());
         System.out.println("Surname " + author.getAuthorSurname());
-        Book Player = new Book("Игрок ", 1866);
+        Book Player = new Book("Игрок ", 1866, "Федор Михайлович Достоевский");
         System.out.println("Игрок " + Player.getname());
         System.out.println("Год выпуска " + Player.getRelease());
         Player.setrelease(1866);
