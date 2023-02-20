@@ -1,12 +1,13 @@
 public class Book {
     private String name;
     private int release;
-    private String Writer;
+    private Author writer;
 
-    public Book(String name, int release, String Writer) {
+    public Book(String name, int release, Author writer) {
         this.name = name;
         this.release = release;
-        this.Writer = Writer;
+        this.writer = writer;
+
     }
 
     public String getname() {
@@ -19,7 +20,5 @@ public class Book {
     public void setrelease (int release) {
         this.release = release;
     }
-    public String getWriter(){
-        return this.Writer;
-    }
+
 }
